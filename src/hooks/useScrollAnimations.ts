@@ -35,15 +35,15 @@ function interpolate(scrollProgress: number) {
 const HERO_SCROLL_END = 800
 
 const hyperspaceData = [
-  { src: 'img1.jpg', x: -900, y: 0, baseZ: -1000, scale: 1.5, speed: 1.3 },
-  { src: 'img2.jpg', x: -400, y: -250, baseZ: -2000, scale: 1, speed: 0.82 },
-  { src: 'img3.jpg', x: -350, y: 350, baseZ: -1500, scale: 1.1, speed: 1.1 },
-  { src: 'img4.jpg', x: -250, y: -250, baseZ: -3000, scale: 0.6, speed: 1.45 },
-  { src: 'img5.jpg', x: 200, y: -250, baseZ: -2500, scale: 0.9, speed: 0.72 },
-  { src: 'img6.jpg', x: 500, y: 100, baseZ: -1800, scale: 1.2, speed: 1.2 },
-  { src: 'img7.jpg', x: 250, y: 350, baseZ: -1200, scale: 1.3, speed: 0.9 },
-  { src: 'img8.jpg', x: 800, y: -450, baseZ: -4000, scale: 0.8, speed: 1.55 },
-  { src: 'img9.jpg', x: -700, y: 450, baseZ: -3500, scale: 0.9, speed: 0.65 },
+  { src: 'img1.jpg', x: -900, y: 0, baseZ: -1000, scale: 1.5, speed: 1.75 },
+  { src: 'img2.jpg', x: -400, y: -250, baseZ: -2000, scale: 1, speed: 1 },
+  { src: 'img3.jpg', x: -350, y: 350, baseZ: -1500, scale: 1.1, speed: 1 },
+  { src: 'img4.jpg', x: -250, y: -250, baseZ: -3000, scale: 0.6, speed: 2 },
+  { src: 'img5.jpg', x: 200, y: -250, baseZ: -2500, scale: 0.9, speed: 1 },
+  { src: 'img6.jpg', x: 500, y: 100, baseZ: -1800, scale: 1.2, speed: 1.6 },
+  { src: 'img7.jpg', x: 250, y: 350, baseZ: -1200, scale: 1.3, speed: 1 },
+  { src: 'img8.jpg', x: 800, y: -450, baseZ: -4000, scale: 0.8, speed: 2.15 },
+  { src: 'img9.jpg', x: -700, y: 450, baseZ: -3500, scale: 0.9, speed: 1 },
 ]
 
 export function useScrollAnimations() {
@@ -79,7 +79,7 @@ export function useScrollAnimations() {
     let globalZOffset = 0
     let lastScrollY = window.scrollY
     let currentScrollVelocity = 0
-    const BASE_SPEED = 4.25
+    const BASE_SPEED = 10
     let rafId: number
 
     function updateHyperspace() {

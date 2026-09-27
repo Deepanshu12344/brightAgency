@@ -325,31 +325,32 @@ body {
 
 .footer-socials {
   display: flex;
-  gap: 12px;
+  gap: 18px;
   width: 100%;
 }
 
 .footer-socials a {
   display: grid;
-  width: 38px;
-  height: 38px;
+  width: 26px;
+  height: 26px;
   place-items: center;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 50%;
-  transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .footer-socials a:hover {
-  color: #000;
-  background: #fff;
-  border-color: #fff;
+  color: #b6a7ff;
+  transform: translateY(-2px);
 }
 
 .footer-socials svg {
-  width: 18px;
-  height: 18px;
+  width: 23px;
+  height: 23px;
   fill: currentColor;
+  stroke: none;
+}
+
+.footer-socials .social-icon-outline {
   stroke: currentColor;
   stroke-width: 1.8;
 }
@@ -764,4 +765,3 @@ body {
   transform: translateX(-50px);
   will-change: transform, opacity;
 }
-
