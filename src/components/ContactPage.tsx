@@ -72,7 +72,7 @@ export default function ContactPage() {
                 <label>YOUR NAME<input name="name" autoComplete="name" required placeholder="Name" /></label>
                 <label>WORK EMAIL<input name="email" type="email" autoComplete="email" required placeholder="you@company.com" /></label>
                 <label>COMPANY<input name="company" autoComplete="organization" required placeholder="Company name" /></label>
-                <label>WEBSITE <span>OPTIONAL</span><input name="website" type="url" placeholder="https://" /></label>
+                <label>WEBSITE<input name="website" type="url" placeholder="https://" /></label>
               </div>
               <fieldset className="contact-services">
                 <legend>WHAT CAN WE HELP WITH?</legend>
