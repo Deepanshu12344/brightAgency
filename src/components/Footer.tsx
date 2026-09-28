@@ -15,9 +15,9 @@ const footerGroups = [
   },
 ]
 
-export default function Footer() {
+export default function Footer({ className = '' }: { className?: string }) {
   return (
-    <footer id="footer" className="site-footer">
+    <footer id="footer" className={`site-footer ${className}`.trim()}>
       <div className="footer-top">
         <div className="footer-social-area footer-reveal" style={{ '--reveal-delay': '0ms' } as CSSProperties}>
           <nav className="footer-socials" aria-label="Social media">

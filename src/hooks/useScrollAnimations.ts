@@ -227,6 +227,19 @@ export function useScrollAnimations() {
       }
       
       // Footer Animation
+      const teamSection = document.querySelector<HTMLElement>('.team-section')
+      if (teamSection) {
+        const teamRect = teamSection.getBoundingClientRect()
+        const teamStart = window.scrollY + teamRect.top - window.innerHeight + 150
+        const teamProgress = Math.min(Math.max((window.scrollY - teamStart) / 700, 0), 1)
+        document.querySelectorAll<HTMLElement>('.team-section-reveal').forEach((el, idx) => {
+          const revealProgress = mapRange(teamProgress, idx * 0.07, 0.58 + idx * 0.07)
+          const eased = easeOut(revealProgress)
+          el.style.opacity = String(eased)
+          el.style.transform = `translateX(${-100 * (1 - eased)}px)`
+        })
+      }
+
       const footer = document.querySelector<HTMLElement>('.site-footer')
       if (footer) {
         const rect = footer.getBoundingClientRect()

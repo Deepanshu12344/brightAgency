@@ -110,7 +110,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div className="logo">BRIGHT</div>
+      <a className="logo" href="/">BRIGHT</a>
 
       <nav className="nav-links">
         {['Services', 'Why Us', 'Resources'].map(label => (
@@ -127,7 +127,7 @@ export default function Header() {
           </div>
         ))}
         <div className="nav-item"><span className="rollup-target">Our Work</span></div>
-        <div className="nav-item"><span className="rollup-target">Contact</span></div>
+        <a className="nav-item" href="/contact"><span className="rollup-target">Contact</span></a>
       </nav>
 
       <div className="header-actions">
